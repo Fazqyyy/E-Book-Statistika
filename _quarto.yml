@@ -1,0 +1,54 @@
+project:
+  type: book
+  output-dir: _site
+
+book:
+  title: "Matematika Teknik Pertambangan"
+  author: "Bakti Siregar, M.Sc."
+  date: today
+  description: "Deskripsi singkat tentang buku"
+  cover-image: images/Cover_Matematika_Tambang.png
+  repo-url: https://github.com/USERNAME/REPOSITORY
+  repo-actions: [edit, issue]
+  chapters:
+    - index.qmd
+    - chapters/bab-1.qmd
+    - chapters/bab-2.qmd
+    - chapters/bab-3.qmd
+    - references/referensi.qmd
+
+bibliography:
+  - references/book.bib
+  - references/packages.bib
+
+format:
+  html:
+    theme: cosmo
+    css: assets/style.css
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    number-depth: 3
+    code-fold: false
+    smooth-scroll: true
+    link-external-newwindow: true
+    include-in-header:
+      text: |
+        <meta name="author" content="Bakti Siregar, M.Sc.">
+  pdf:
+    documentclass: book
+    pdf-engine: xelatex
+    keep-tex: true
+    include-in-header: assets/preamble.tex
+    number-sections: true
+    toc: true
+  epub:
+    cover-image: images/Cover_Matematika_Tambang.png
+
+execute:
+  freeze: auto
+  echo: true
+  warning: false
+  message: false
+
+lang: id

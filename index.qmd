@@ -1,0 +1,39 @@
+---
+title: "Pengenalan"
+author: "Bakti Siregar, M.Sc."
+date: today
+description: "Deskripsi singkat tentang buku"
+---
+
+
+
+# Kata Pengantar{.unnumbered}
+
+Dengan mengucap syukur kepada Tuhan Yang Maha Esa, saya sangat senang dapat mempersembahkan eBook "Matematika Tambang" kepada para pembaca yang budiman. Buku ini merupakan hasil dari proses panjang, penelitian mendalam, serta dedikasi yang tiada henti. Harapan saya, eBook ini dapat memberikan manfaat yang signifikan bagi para pembaca, baik itu akademisi, praktisi, maupun masyarakat umum yang memiliki minat pada bidang ini.
+
+Buku ini disusun dengan tujuan memberikan wawasan dan pengetahuan yang komprehensif mengenai konsep-konsep matematika yang relevan dan aplikatif dalam bidang pertambangan. Melalui buku ini, pembaca diharapkan dapat memahami konsep dasar kalkulus, aljabar linear, statistik, dan probabilitas yang diterapkan dalam pemodelan dan analisis data pertambangan.
+
+
+## Penulis {.unnumbered}
+
+<img src = "images/author/Bakti.jpg" width = "150" height = "150" style = "float:right; margin-left: 10px; margin-top: 7px" />
+
+- **[Bakti Siregar, M.Sc., CDS](https://www.linkedin.com/in/dsciencelabs/)** bekerja sebagai Dosen di Prodi Sains Data Institut Teknologi Sains Bandung. Beliau adalah meraih gelar Magister-nya dari Departemen Matematika Terapan (Applied Mathematics) National Sun Yat Sen University, Taiwan. Selain mengajar beliau juga pernah bekerja sebagai **Data Scientist Freelance** di perusahaan-perusahaan ternama seperti [JNE](https://www.jne.co.id/id/beranda), [Samora Group](https://www.samoragroup.co.id/home/en), [Pertamina](https://www.pertamina.com/), dan saat ini masih aktif sebagai **Data Scientist Freelance** di [PT. Green City Traffic](PT. Green City Traffic). Beliau memiliki antusiasme khusus dalam mengerjakan proyek (mengajar) Big Data Analytics, Machine Learning, Optimisasi, dan Analisis Time Series di bidang keuangan dan investasi. Keahlian utama yang dimilikinya adalah bahasa pemrograman Statistik seperti R Studio dan Python. Beliau juga sudah terbiasa dalam mengaplikasikan sistem basis data MySQL/NoSQL untuk manajemen data, serta mahir dalam menggunakan tools Big Data seperti Spark dan Hadoop. Beberapa project beliau dapat dilihat di link berikut: [Rpubs](https://rpubs.com/dsciencelabs), [Github](https://github.com/dsciencelabs), [Website](https://dsciencelabs.github.io/web/index.html), dan [Kaggle](https://www.kaggle.com/baktisiregar/code). 
+
+
+## Ucapan Terima Kasih{.unnumbered}
+
+Proses penulisan eBook ini tidak terlepas dari dukungan berbagai pihak. Saya ingin mengucapkan terima kasih kepada:
+
+* **Keluarga** yang selalu memberikan dukungan moral dan semangat tanpa henti.
+* **Rekan-rekan dan Kolaborator** yang telah memberikan masukan, saran, dan kritik yang konstruktif.
+* Institusi dan Organisasi, Khususnya **[ITSB](https://itsb.ac.id/)** yang telah menyediakan sumber daya dan fasilitas yang diperlukan selama proses penelitian dan penulisan.
+
+Saya berharap eBook ini dapat menjadi referensi yang bermanfaat dan memberikan inspirasi serta pengetahuan baru bagi pembaca. Semoga Ebook ini dapat memenuhi ekspektasi dan kebutuhan para pembaca dan semoga ilmu yang disampaikan dapat bermanfaat bagi semua.
+
+
+## Masukan & Saran {.unnumbered}
+
+Semua masukan dan tanggapan Anda sangat berarti bagi kami untuk memperbaiki Ebook Matematika Tambang ini kedepannya. Bagi para pembaca/pengguna yang ingin menyampaikan masukan dan tanggapan, dipersilahkan melalui kontak dibawah ini!
+
+**Email:** dsciencelabs@outlook.com
