@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Pengenalan",
+    "section": "",
+    "text": "Kata Pengantar\nDengan mengucap syukur kepada Tuhan Yang Maha Esa, saya sangat senang dapat mempersembahkan eBook “Quarto Template” kepada para pembaca/pengguna.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Pengenalan</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#penulis",
+    "href": "index.html#penulis",
+    "title": "Pengenalan",
+    "section": "Penulis",
+    "text": "Penulis\n\n\nBakti Siregar, M.Sc., CDS bekerja sebagai Dosen di Prodi Sains Data Institut Teknologi Sains Bandung. Beliau adalah meraih gelar Magister-nya dari Departemen Matematika Terapan (Applied Mathematics) National Sun Yat Sen University, Taiwan. Selain mengajar beliau juga pernah bekerja sebagai Data Scientist Freelance di perusahaan-perusahaan ternama seperti JNE, Samora Group, Pertamina, dan saat ini masih aktif sebagai Data Scientist Freelance di PT. Green City Traffic. Beliau memiliki antusiasme khusus dalam mengerjakan proyek (mengajar) Big Data Analytics, Machine Learning, Optimisasi, dan Analisis Time Series di bidang keuangan dan investasi. Keahlian utama yang dimilikinya adalah bahasa pemrograman Statistik seperti R Studio dan Python. Beliau juga sudah terbiasa dalam mengaplikasikan sistem basis data MySQL/NoSQL untuk manajemen data, serta mahir dalam menggunakan tools Big Data seperti Spark dan Hadoop. Beberapa project beliau dapat dilihat di link berikut: Rpubs, Github, Website, dan Kaggle.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Pengenalan</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#ucapan-terima-kasih",
+    "href": "index.html#ucapan-terima-kasih",
+    "title": "Pengenalan",
+    "section": "Ucapan Terima Kasih",
+    "text": "Ucapan Terima Kasih\nProses penulisan Tempate eBook ini tidak terlepas dari dukungan berbagai pihak. Saya ingin mengucapkan terima kasih kepada:\n\nKeluarga yang selalu memberikan dukungan moral dan semangat tanpa henti.\nRekan-rekan dan Kolaborator yang telah memberikan masukan, saran, dan kritik yang konstruktif.\nInstitusi dan Organisasi, Khususnya ITSB yang telah menyediakan sumber daya dan fasilitas yang diperlukan selama proses penelitian dan penulisan.\n\nSaya berharap Template eBook ini dapat menjadi referensi yang bermanfaat dan memberikan inspirasi serta pengetahuan baru bagi pembaca. Semoga Ebook ini dapat memenuhi ekspektasi dan kebutuhan para pembaca dan semoga ilmu yang disampaikan dapat bermanfaat bagi semua.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Pengenalan</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#masukan-saran",
+    "href": "index.html#masukan-saran",
+    "title": "Pengenalan",
+    "section": "Masukan & Saran",
+    "text": "Masukan & Saran\nSemua masukan dan tanggapan Anda sangat berarti bagi kami untuk memperbaiki Ebook Quarto Template ini kedepannya. Bagi para pembaca/pengguna yang ingin menyampaikan masukan dan tanggapan, dipersilahkan melalui kontak dibawah ini!\nEmail: dsciencelabs@outlook.com",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Pengenalan</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/bab-1.html",
+    "href": "chapters/bab-1.html",
+    "title": "2  Bab1",
+    "section": "",
+    "text": "2.1 Praktikum",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Bab1</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/bab-2.html",
+    "href": "chapters/bab-2.html",
+    "title": "3  Bab2",
+    "section": "",
+    "text": "3.1 Praktikum",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bab2</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/bab-3.html",
+    "href": "chapters/bab-3.html",
+    "title": "4  Bab3",
+    "section": "",
+    "text": "4.1 Praktikum",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bab3</span>"
+    ]
+  }
+]
