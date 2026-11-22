@@ -3,12 +3,12 @@ project:
   output-dir: _site
 
 book:
-  title: "Matematika Teknik Pertambangan"
+  title: "Quarto Template"
   author: "Bakti Siregar, M.Sc."
   date: today
   description: "Deskripsi singkat tentang buku"
   cover-image: images/Cover_Matematika_Tambang.png
-  repo-url: https://github.com/USERNAME/REPOSITORY
+  repo-url: https://github.com/pakardata1/Quarto_Template.git
   repo-actions: [edit, issue]
   chapters:
     - index.qmd
