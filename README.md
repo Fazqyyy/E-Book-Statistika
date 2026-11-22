@@ -1,6 +1,6 @@
-# Matematika Teknik Pertambangan
+# Quarto Template
 
-Repositori sumber terbuka untuk pengembangan buku **Matematika Teknik Pertambangan** menggunakan **Quarto Book** dan R.
+Repositori sumber terbuka untuk pengembangan buku **Quarto Template** menggunakan **Quarto Book** dan R.
 
 README ini menjelaskan struktur proyek, cara menjalankan buku secara lokal, serta langkah publikasi melalui GitHub Public Repository dan GitHub Pages.
 
