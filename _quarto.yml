@@ -10,7 +10,7 @@ book:
   date: today
   description: "Deskripsi singkat tentang buku"
   cover-image: images/Cover_Matematika_Tambang.png
-  repo-url: https://github.com/pakardata1/Quarto_Template.git
+  repo-url: https://github.com/pakardata1/ebook-template-quarto.git
   repo-actions: [edit, issue]
   chapters:
     - index.qmd
