@@ -114,7 +114,7 @@ repo-url: https://github.com/USERNAME/REPOSITORY
 Contoh:
 
 ```yaml
-repo-url: https://github.com/baktisiregar/matematika-teknik-pertambangan
+repo-url: https://github.com/pakardata1/ebook-template-quarto.git
 ```
 
 Ganti `USERNAME` dengan nama akun GitHub dan `REPOSITORY` dengan nama repositori yang digunakan.
@@ -140,7 +140,7 @@ git init
 git add .
 git commit -m "Initial Quarto book project"
 git branch -M main
-git remote add origin https://github.com/pakardata1/Quarto_Template.git
+git remote add origin https://github.com/pakardata1/ebook-template-quarto.git
 git push -u origin main
 ```
 
@@ -169,7 +169,7 @@ Workflow akan menjalankan `quarto render` setiap kali ada perubahan yang di-push
 Jika workflow berhasil, alamat buku biasanya berbentuk:
 
 ```text
-https://USERNAME.github.io/REPOSITORY/
+https://pakardata1.github.io/ebook-template-quarto/
 ```
 
 Alamat final dapat dilihat pada **Settings → Pages**.
