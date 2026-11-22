@@ -1,0 +1,293 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  letterpaper,
+]{book}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{5}
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage{booktabs}
+\usepackage{lscape}
+
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Daftar Isi}
+\else
+  \newcommand\contentsname{Daftar Isi}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{Daftar Gambar}
+\else
+  \newcommand\listfigurename{Daftar Gambar}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{Daftar Tabel}
+\else
+  \newcommand\listtablename{Daftar Tabel}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Gambar}
+\else
+  \newcommand\figurename{Gambar}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Tabel}
+\else
+  \newcommand\tablename{Tabel}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Daftar}
+\newcommand*\listoflistings{\listof{codelisting}{Daftar Daftar}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{indonesian}
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+\usepackage{bookmark}
+
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Quarto Template},
+  pdfauthor={Bakti Siregar, M.Sc.},
+  pdflang={id},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Quarto Template}
+\author{Bakti Siregar, M.Sc.}
+\date{2026-11-22}
+
+\begin{document}
+\frontmatter
+\maketitle
+
+\renewcommand*\contentsname{Daftar Isi}
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+
+\mainmatter
+\bookmarksetup{startatroot}
+
+\chapter{Pengenalan}\label{pengenalan}
+
+\bookmarksetup{startatroot}
+
+\chapter*{Kata Pengantar}\label{kata-pengantar}
+\addcontentsline{toc}{chapter}{Kata Pengantar}
+
+\markboth{Kata Pengantar}{Kata Pengantar}
+
+Dengan mengucap syukur kepada Tuhan Yang Maha Esa, saya sangat senang
+dapat mempersembahkan eBook ``Quarto Template'' kepada para
+pembaca/pengguna.
+
+\section*{Penulis}\label{penulis}
+\addcontentsline{toc}{section}{Penulis}
+
+\markright{Penulis}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{\href{https://www.linkedin.com/in/dsciencelabs/}{Bakti
+  Siregar, M.Sc., CDS}} bekerja sebagai Dosen di Prodi Sains Data
+  Institut Teknologi Sains Bandung. Beliau adalah meraih gelar
+  Magister-nya dari Departemen Matematika Terapan (Applied Mathematics)
+  National Sun Yat Sen University, Taiwan. Selain mengajar beliau juga
+  pernah bekerja sebagai \textbf{Data Scientist Freelance} di
+  perusahaan-perusahaan ternama seperti
+  \href{https://www.jne.co.id/id/beranda}{JNE},
+  \href{https://www.samoragroup.co.id/home/en}{Samora Group},
+  \href{https://www.pertamina.com/}{Pertamina}, dan saat ini masih aktif
+  sebagai \textbf{Data Scientist Freelance} di
+  \href{PT.\%20Green\%20City\%20Traffic}{PT. Green City Traffic}. Beliau
+  memiliki antusiasme khusus dalam mengerjakan proyek (mengajar) Big
+  Data Analytics, Machine Learning, Optimisasi, dan Analisis Time Series
+  di bidang keuangan dan investasi. Keahlian utama yang dimilikinya
+  adalah bahasa pemrograman Statistik seperti R Studio dan Python.
+  Beliau juga sudah terbiasa dalam mengaplikasikan sistem basis data
+  MySQL/NoSQL untuk manajemen data, serta mahir dalam menggunakan tools
+  Big Data seperti Spark dan Hadoop. Beberapa project beliau dapat
+  dilihat di link berikut: \href{https://rpubs.com/dsciencelabs}{Rpubs},
+  \href{https://github.com/dsciencelabs}{Github},
+  \href{https://dsciencelabs.github.io/web/index.html}{Website}, dan
+  \href{https://www.kaggle.com/baktisiregar/code}{Kaggle}.
+\end{itemize}
+
+\section*{Ucapan Terima Kasih}\label{ucapan-terima-kasih}
+\addcontentsline{toc}{section}{Ucapan Terima Kasih}
+
+\markright{Ucapan Terima Kasih}
+
+Proses penulisan Tempate eBook ini tidak terlepas dari dukungan berbagai
+pihak. Saya ingin mengucapkan terima kasih kepada:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Keluarga} yang selalu memberikan dukungan moral dan semangat
+  tanpa henti.
+\item
+  \textbf{Rekan-rekan dan Kolaborator} yang telah memberikan masukan,
+  saran, dan kritik yang konstruktif.
+\item
+  Institusi dan Organisasi, Khususnya
+  \textbf{\href{https://itsb.ac.id/}{ITSB}} yang telah menyediakan
+  sumber daya dan fasilitas yang diperlukan selama proses penelitian dan
+  penulisan.
+\end{itemize}
+
+Saya berharap Template eBook ini dapat menjadi referensi yang bermanfaat
+dan memberikan inspirasi serta pengetahuan baru bagi pembaca. Semoga
+Ebook ini dapat memenuhi ekspektasi dan kebutuhan para pembaca dan
+semoga ilmu yang disampaikan dapat bermanfaat bagi semua.
+
+\section*{Masukan \& Saran}\label{masukan-saran}
+\addcontentsline{toc}{section}{Masukan \& Saran}
+
+\markright{Masukan \& Saran}
+
+Semua masukan dan tanggapan Anda sangat berarti bagi kami untuk
+memperbaiki Ebook Quarto Template ini kedepannya. Bagi para
+pembaca/pengguna yang ingin menyampaikan masukan dan tanggapan,
+dipersilahkan melalui kontak dibawah ini!
+
+\textbf{Email:} dsciencelabs@outlook.com
+
+\bookmarksetup{startatroot}
+
+\chapter{Bab1}\label{bab1}
+
+\section{Praktikum}\label{praktikum}
+
+\bookmarksetup{startatroot}
+
+\chapter{Bab2}\label{bab2}
+
+\section{Praktikum}\label{praktikum-1}
+
+\bookmarksetup{startatroot}
+
+\chapter{Bab3}\label{bab3}
+
+\section{Praktikum}\label{praktikum-2}
+
+\bookmarksetup{startatroot}
+
+\chapter{Referensi}\label{referensi}
+
+
+\backmatter
+
+
+\end{document}
