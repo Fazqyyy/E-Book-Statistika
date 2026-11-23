@@ -44,7 +44,7 @@
     "href": "chapters/bab-1.html",
     "title": "1  Distribusi Sampling",
     "section": "",
-    "text": "1.1 Praktikum",
+    "text": "1.1 Pendahuluan",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Distribusi Sampling</span>"
     ]
@@ -52,11 +52,11 @@
   {
     "objectID": "chapters/bab-2.html",
     "href": "chapters/bab-2.html",
-    "title": "2  Hiptesis Testing",
+    "title": "2  Hypothesis Testing",
     "section": "",
-    "text": "2.1 Praktikum",
+    "text": "2.1 Pendahuluan",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Hiptesis Testing</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Hypothesis Testing</span>"
     ]
   },
   {

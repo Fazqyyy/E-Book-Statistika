@@ -1,4 +1,3 @@
-# Hiptesis Testing
+# Hypothesis Testing
 
-
-## Praktikum
+## Pendahuluan
