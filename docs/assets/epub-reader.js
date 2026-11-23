@@ -2,15 +2,27 @@ const status = document.getElementById("status");
 const previous = document.getElementById("previous");
 const next = document.getElementById("next");
 const chapterSelect = document.getElementById("chapter-select");
+const viewer = document.getElementById("viewer");
+const turnSheet = document.getElementById("turn-sheet");
 
 async function openEpub() {
   try {
+    const spreadQuery = window.matchMedia("(min-width: 760px)");
     const book = ePub("./Quarto-Template.epub");
     const rendition = book.renderTo("viewer", {
       width: "100%",
       height: "100%",
-      spread: "auto",
+      flow: "paginated",
+      spread: spreadQuery.matches ? "always" : "none",
     });
+
+    const updateSpread = () => {
+      viewer.classList.toggle("is-spread", spreadQuery.matches);
+      viewer.classList.toggle("is-single", !spreadQuery.matches);
+      rendition.spread(spreadQuery.matches ? "always" : "none");
+    };
+    updateSpread();
+    spreadQuery.addEventListener("change", updateSpread);
 
     await rendition.display();
 
@@ -31,8 +43,26 @@ async function openEpub() {
     next.disabled = false;
     status.textContent = "";
 
-    previous.addEventListener("click", () => rendition.prev());
-    next.addEventListener("click", () => rendition.next());
+    const turnPage = async (direction) => {
+      viewer.classList.remove("turn-next", "turn-prev");
+      void turnSheet.offsetWidth;
+      viewer.classList.add(direction === "next" ? "turn-next" : "turn-prev");
+
+      try {
+        if (direction === "next") {
+          await rendition.next();
+        } else {
+          await rendition.prev();
+        }
+      } finally {
+        window.setTimeout(() => {
+          viewer.classList.remove("turn-next", "turn-prev");
+        }, 500);
+      }
+    };
+
+    previous.addEventListener("click", () => turnPage("prev"));
+    next.addEventListener("click", () => turnPage("next"));
     chapterSelect.addEventListener("change", () => {
       if (chapterSelect.value) {
         rendition.display(chapterSelect.value);

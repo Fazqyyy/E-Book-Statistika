@@ -20,13 +20,17 @@
       min-height: 100vh;
       margin: 0;
       display: grid;
+      grid-template-columns: minmax(0, 1fr);
       grid-template-rows: auto 1fr;
+      overflow-x: hidden;
     }
 
     header {
       display: flex;
       align-items: center;
       gap: 1rem;
+      min-width: 0;
+      flex-wrap: wrap;
       padding: 0.75rem clamp(1rem, 4vw, 2rem);
       background: #315479;
       color: #fff;
@@ -34,6 +38,7 @@
 
     header h1 {
       flex: 1;
+      min-width: 0;
       margin: 0;
       font-size: 1.15rem;
     }
@@ -61,6 +66,7 @@
 
     main {
       width: min(100%, 1100px);
+      min-width: 0;
       margin: 1.25rem auto;
       padding: 0 clamp(0.75rem, 3vw, 1.5rem);
       display: grid;
@@ -74,10 +80,12 @@
       align-items: center;
       justify-content: center;
       gap: 0.6rem;
+      min-width: 0;
     }
 
     #chapter-select {
       width: min(55vw, 30rem);
+      min-width: 0;
       background: #fff;
     }
 
@@ -93,13 +101,89 @@
     }
 
     #viewer {
+      position: relative;
+      min-width: 0;
       min-height: 60vh;
       height: calc(100vh - 11rem);
       overflow: hidden;
       border: 1px solid #d5deea;
       border-radius: 0.5rem;
-      background: #fff;
-      box-shadow: 0 0.5rem 1.5rem rgba(35, 54, 74, 0.08);
+      background: #e8dfd0;
+      box-shadow: 0 0.75rem 2rem rgba(35, 54, 74, 0.16);
+      perspective: 1600px;
+      isolation: isolate;
+    }
+
+    #viewer.is-spread::after {
+      position: absolute;
+      z-index: 2;
+      inset: 0;
+      pointer-events: none;
+      content: "";
+      background: linear-gradient(
+        90deg,
+        transparent calc(50% - 1rem),
+        rgba(70, 53, 32, 0.08) 50%,
+        transparent calc(50% + 1rem)
+      );
+    }
+
+    #turn-sheet {
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      bottom: 0;
+      display: none;
+      width: 50%;
+      pointer-events: none;
+      background: linear-gradient(90deg, #f8f4ec, #fffefa 22%, #eee6d9);
+      backface-visibility: hidden;
+      transform-style: preserve-3d;
+    }
+
+    #viewer.is-single #turn-sheet {
+      width: 100%;
+    }
+
+    #viewer.turn-next #turn-sheet {
+      right: 0;
+      transform-origin: left center;
+      animation: turn-next 480ms ease-in forwards;
+    }
+
+    #viewer.turn-prev #turn-sheet {
+      left: 0;
+      transform-origin: right center;
+      animation: turn-prev 480ms ease-in forwards;
+    }
+
+    #viewer.turn-next #turn-sheet,
+    #viewer.turn-prev #turn-sheet {
+      display: block;
+    }
+
+    @keyframes turn-next {
+      from {
+        transform: rotateY(0);
+        box-shadow: -0.5rem 0 1rem rgba(35, 28, 20, 0.16);
+      }
+
+      to {
+        transform: rotateY(-180deg);
+        box-shadow: -1.5rem 0 2rem rgba(35, 28, 20, 0.25);
+      }
+    }
+
+    @keyframes turn-prev {
+      from {
+        transform: rotateY(0);
+        box-shadow: 0.5rem 0 1rem rgba(35, 28, 20, 0.16);
+      }
+
+      to {
+        transform: rotateY(180deg);
+        box-shadow: 1.5rem 0 2rem rgba(35, 28, 20, 0.25);
+      }
     }
 
     #status {
@@ -115,6 +199,21 @@
 
       header h1 {
         flex-basis: 100%;
+      }
+
+      nav {
+        flex-wrap: wrap;
+      }
+
+      #chapter-select {
+        order: 1;
+        flex-basis: 100%;
+        width: 100%;
+      }
+
+      #previous,
+      #next {
+        flex: 1;
       }
 
       #viewer {
@@ -138,7 +237,9 @@
       </select>
       <button id="next" type="button" disabled>Berikutnya</button>
     </nav>
-    <div id="viewer" aria-label="Pembaca EPUB"></div>
+    <div id="viewer" class="is-single" aria-label="Pembaca EPUB">
+      <div id="turn-sheet" aria-hidden="true"></div>
+    </div>
     <p id="status" role="status">Memuat buku...</p>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>

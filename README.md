@@ -89,7 +89,7 @@ quarto render --to pdf --no-clean
 quarto render --to epub --no-clean
 ```
 
-Bagian `sidebar.tools` pada `_quarto.yml` menambahkan tombol **Pratinjau PDF** dan **Pratinjau EPUB** secara terpisah di sidebar. Tombol EPUB membuka pembaca online; file EPUB juga dapat diunduh dari halaman pembaca. Agar tombol berfungsi di GitHub Pages, sertakan `docs/Quarto-Template.pdf`, `docs/Quarto-Template.epub`, dan `docs/epub-reader.html` saat mengunggah hasil render.
+Bagian `sidebar.tools` pada `_quarto.yml` menambahkan tombol **Pratinjau PDF** dan **Pratinjau EPUB** secara terpisah di sidebar. Tombol EPUB membuka pembaca online dengan tampilan lembar buku, animasi membalik halaman, dan mode satu halaman untuk ponsel; file EPUB juga dapat diunduh dari halaman pembaca. Agar tombol berfungsi di GitHub Pages, sertakan `docs/Quarto-Template.pdf`, `docs/Quarto-Template.epub`, dan `docs/epub-reader.html` saat mengunggah hasil render.
 
 Pada situs HTML, arahkan kursor ke tautan web untuk melihat alamatnya. Tautan silang Quarto untuk gambar, tabel, dan rumus menampilkan pratinjau target; gunakan caption dan label seperti `fig-...`, `tbl-...`, atau `eq-...`, lalu rujuk dengan `@fig-...`, `@tbl-...`, atau `@eq-...`. Klik tautan silang untuk menuju target.
 
