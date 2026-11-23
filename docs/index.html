@@ -272,6 +272,19 @@ Penulis</p>
 </section>
 
 </main> <!-- /main -->
+<script>
+document.querySelectorAll('a[href^="http://"], a[href^="https://"]').forEach((link) => {
+  if (link.classList.contains("quarto-navigation-tool")) {
+    return;
+  }
+
+  window.tippy(link, {
+    content: link.href,
+    placement: "top",
+    maxWidth: 480,
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
