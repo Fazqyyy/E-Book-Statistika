@@ -3,15 +3,17 @@ project:
   output-dir: docs
   resources:
     - .nojekyll
+    - images/author/Bakti.png
 
 book:
   title: "Quarto Template"
   author: "Bakti Siregar, M.Sc."
   date: today
   description: "Deskripsi singkat tentang buku"
-  cover-image: images/Cover_Matematika_Tambang.png
+  cover-image: images/Cover.png
   repo-url: https://github.com/pakardata1/ebook-template-quarto.git
   repo-actions: [edit, issue]
+  downloads: [pdf]
   chapters:
     - index.qmd
     - chapters/bab-1.qmd
@@ -22,6 +24,8 @@ book:
 bibliography:
   - references/book.bib
   - references/packages.bib
+csl: references/ieee.csl
+link-citations: true
 
 format:
   html:
@@ -45,7 +49,7 @@ format:
     number-sections: true
     toc: true
   epub:
-    cover-image: images/Cover_Matematika_Tambang.png
+    cover-image: images/Cover.png
 
 execute:
   freeze: auto

@@ -7,9 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Bakti Siregar, M.Sc.">
-<meta name="description" content="Deskripsi singkat tentang buku">
+<meta name="dcterms.date" content="2026-11-23">
+<meta name="description" content="Deskripsi Singkat">
 
-<title>Pengenalan</title>
+<title>Quarto Template</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -85,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Pengenalan</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Kata Pengantar</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Mencari" onclick="window.quartoOpenSearch();">
@@ -102,7 +123,8 @@ ul.task-list li input[type="checkbox"] {
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Quarto Template</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/pakardata1/Quarto_Template.git" title="Kode Sumber" class="quarto-navigation-tool px-1" aria-label="Kode Sumber"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/pakardata1/ebook-template-quarto.git" title="Kode Sumber" class="quarto-navigation-tool px-1" aria-label="Kode Sumber"><i class="bi bi-github"></i></a>
+    <a href="./Quarto-Template.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
 </div>
     </div>
       </div>
@@ -116,31 +138,31 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Pengenalan</span></span></a>
+ <span class="menu-text">Kata Pengantar</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapters/bab-1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Bab1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Bab1</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapters/bab-2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Bab2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Bab2</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapters/bab-3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bab3</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Bab3</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references/referensi.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Referensi</span></span></a>
+ <span class="menu-text">Referensi</span></a>
   </div>
 </li>
     </ul>
@@ -160,19 +182,19 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#masukan-saran" id="toc-masukan-saran" class="nav-link" data-scroll-target="#masukan-saran">Masukan &amp; Saran</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/pakardata1/Quarto_Template.git/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Sunting laman ini</a></li><li><a href="https://github.com/pakardata1/Quarto_Template.git/issues/new" class="toc-action"><i class="bi empty"></i>Laporkan isu</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/pakardata1/ebook-template-quarto.git/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Sunting laman ini</a></li><li><a href="https://github.com/pakardata1/ebook-template-quarto.git/issues/new" class="toc-action"><i class="bi empty"></i>Laporkan isu</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Pengenalan</h1>
+<h1 class="title">Quarto Template</h1>
 </div>
 
 <div>
   <div class="description">
-    Deskripsi singkat tentang buku
+    Deskripsi Singkat
   </div>
 </div>
 
@@ -189,7 +211,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Diterbitkan</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">today</p>
+      <p class="date">23 November 2026</p>
     </div>
   </div>
   
@@ -203,17 +225,29 @@ ul.task-list li input[type="checkbox"] {
 
 
 <section id="kata-pengantar" class="level1 unnumbered">
-<h1 class="unnumbered">Kata Pengantar</h1><p><img src="images/Cover_Matematika_Tambang.png" title="Quarto Template" class="quarto-cover-image img-fluid"></p>
-<p>Dengan mengucap syukur kepada Tuhan Yang Maha Esa, saya sangat senang dapat mempersembahkan eBook “Quarto Template” kepada para pembaca/pengguna.</p>
-<section id="penulis" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="penulis">Penulis</h2>
-<p><img src="images/author/Bakti.jpg" width="150" height="150" style="float:right; margin-left: 10px; margin-top: 7px"></p>
-<ul>
-<li><strong><a href="https://www.linkedin.com/in/dsciencelabs/">Bakti Siregar, M.Sc., CDS</a></strong> bekerja sebagai Dosen di Prodi Sains Data Institut Teknologi Sains Bandung. Beliau adalah meraih gelar Magister-nya dari Departemen Matematika Terapan (Applied Mathematics) National Sun Yat Sen University, Taiwan. Selain mengajar beliau juga pernah bekerja sebagai <strong>Data Scientist Freelance</strong> di perusahaan-perusahaan ternama seperti <a href="https://www.jne.co.id/id/beranda">JNE</a>, <a href="https://www.samoragroup.co.id/home/en">Samora Group</a>, <a href="https://www.pertamina.com/">Pertamina</a>, dan saat ini masih aktif sebagai <strong>Data Scientist Freelance</strong> di <a href="PT. Green City Traffic">PT. Green City Traffic</a>. Beliau memiliki antusiasme khusus dalam mengerjakan proyek (mengajar) Big Data Analytics, Machine Learning, Optimisasi, dan Analisis Time Series di bidang keuangan dan investasi. Keahlian utama yang dimilikinya adalah bahasa pemrograman Statistik seperti R Studio dan Python. Beliau juga sudah terbiasa dalam mengaplikasikan sistem basis data MySQL/NoSQL untuk manajemen data, serta mahir dalam menggunakan tools Big Data seperti Spark dan Hadoop. Beberapa project beliau dapat dilihat di link berikut: <a href="https://rpubs.com/dsciencelabs">Rpubs</a>, <a href="https://github.com/dsciencelabs">Github</a>, <a href="https://dsciencelabs.github.io/web/index.html">Website</a>, dan <a href="https://www.kaggle.com/baktisiregar/code">Kaggle</a>.</li>
-</ul>
+<h1 class="unnumbered">Kata Pengantar</h1><p><img src="images/Cover.png" title="Quarto Template" class="quarto-cover-image img-fluid"></p>
+<p>Dengan mengucap syukur kepada Tuhan Yang Maha Esa, saya sangat senang dapat mempersembahkan eBook <strong>“Quarto Template”</strong> kepada para pembaca dan pengguna. eBook ini disusun sebagai panduan praktis untuk membantu mahasiswa, dosen, peneliti, serta praktisi dalam memanfaatkan Quarto sebagai salah satu perangkat untuk menyusun, mengelola, dan menerbitkan dokumen secara profesional.</p>
+<p>Quarto merupakan perangkat <em>open-source scientific and technical publishing</em> yang memungkinkan pengguna mengintegrasikan teks, kode pemrograman, hasil analisis, visualisasi data, serta berbagai elemen pendukung lainnya ke dalam satu dokumen. Dengan Quarto, proses penulisan dan publikasi dapat dilakukan secara lebih terstruktur, reproducible, dan efisien dalam berbagai format keluaran, seperti HTML, PDF, Microsoft Word, serta format publikasi lainnya.</p>
+<p>Contoh sitasi: tuliskan <code>[@xie2015]</code> untuk merujuk entri <code>xie2015</code> di <code>references/book.bib</code>. Pada hasil render, sitasinya tampil seperti ini <a href="./references/referensi.html#ref-xie2015"><span class="citation" data-cites="xie2015"><span>[1]</span></span></a>.</p>
+<p>Melalui eBook ini, pembaca akan diperkenalkan pada penggunaan template Quarto, mulai dari pengenalan struktur proyek, pengaturan konfigurasi, penulisan dokumen menggunakan Markdown, integrasi kode pemrograman, pengelolaan referensi, hingga proses <em>rendering</em> menjadi dokumen yang siap digunakan dan dipublikasikan.</p>
+<p>Materi disusun secara bertahap agar mudah dipahami dan dipraktikkan, termasuk oleh pengguna yang baru pertama kali mengenal Quarto. Template dan contoh yang disajikan diharapkan dapat menjadi referensi dalam mengembangkan berbagai kebutuhan dokumentasi akademik, laporan penelitian, modul pembelajaran, buku elektronik, maupun publikasi berbasis data.</p>
+<p>Saya berharap eBook ini dapat memberikan manfaat nyata dalam mendukung peningkatan literasi digital, produktivitas akademik, dan penerapan praktik penulisan ilmiah yang modern. Lebih dari sekadar panduan teknis, eBook ini diharapkan dapat mendorong pembaca untuk mengeksplorasi berbagai kemampuan Quarto dan mengembangkan template sesuai dengan kebutuhan masing-masing.</p>
+<p>Saya menyadari bahwa eBook ini masih memiliki ruang untuk penyempurnaan. Oleh karena itu, kritik, saran, dan masukan dari para pembaca sangat diharapkan sebagai bahan evaluasi untuk pengembangan edisi berikutnya.</p>
+<p>Akhir kata, semoga eBook ini dapat menjadi referensi yang bermanfaat dan memberikan kontribusi positif bagi dunia pendidikan, penelitian, dan pengembangan ilmu pengetahuan.</p>
+<p><strong>Bakti Siregar, M.Sc.</strong><br>
+Penulis</p>
+<section id="penulis" class="level2">
+<h2 class="anchored" data-anchor-id="penulis">Penulis</h2>
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="images/author/Bakti.png" class="author-portrait img-fluid figure-img" style="width:1.5in"></p>
+<figcaption>Foto Bakti Siregar, M.Sc.</figcaption>
+</figure>
+</div>
+<p><strong><a href="https://www.linkedin.com/in/dsciencelabs/">Bakti Siregar, M.Sc., CDS</a></strong> bekerja sebagai Dosen di Prodi Sains Data Institut Teknologi Sains Bandung. Beliau adalah meraih gelar Magister-nya dari Departemen Matematika Terapan (Applied Mathematics) National Sun Yat Sen University, Taiwan. Selain mengajar beliau juga pernah bekerja sebagai <strong>Data Scientist Freelance</strong> di perusahaan-perusahaan ternama seperti <a href="https://www.jne.co.id/id/beranda">JNE</a>, <a href="https://www.samoragroup.co.id/home/en">Samora Group</a>, <a href="https://www.pertamina.com/">Pertamina</a>, dan saat ini masih aktif sebagai <strong>Data Scientist Freelance</strong> di <a href="PT. Green City Traffic">PT. Green City Traffic</a>. Beliau memiliki antusiasme khusus dalam mengerjakan proyek (mengajar) Big Data Analytics, Machine Learning, Optimisasi, dan Analisis Time Series di bidang keuangan dan investasi. Keahlian utama yang dimilikinya adalah bahasa pemrograman Statistik seperti R Studio dan Python. Beliau juga sudah terbiasa dalam mengaplikasikan sistem basis data MySQL/NoSQL untuk manajemen data, serta mahir dalam menggunakan tools Big Data seperti Spark dan Hadoop. Beberapa project beliau dapat dilihat di link berikut: <a href="https://rpubs.com/dsciencelabs">Rpubs</a>, <a href="https://github.com/dsciencelabs">Github</a>, <a href="https://dsciencelabs.github.io/web/index.html">Website</a>, dan <a href="https://www.kaggle.com/baktisiregar/code">Kaggle</a>.</p>
 </section>
-<section id="ucapan-terima-kasih" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="ucapan-terima-kasih">Ucapan Terima Kasih</h2>
+<section id="ucapan-terima-kasih" class="level2">
+<h2 class="anchored" data-anchor-id="ucapan-terima-kasih">Ucapan Terima Kasih</h2>
 <p>Proses penulisan Tempate eBook ini tidak terlepas dari dukungan berbagai pihak. Saya ingin mengucapkan terima kasih kepada:</p>
 <ul>
 <li><strong>Keluarga</strong> yang selalu memberikan dukungan moral dan semangat tanpa henti.</li>
@@ -222,12 +256,17 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Saya berharap Template eBook ini dapat menjadi referensi yang bermanfaat dan memberikan inspirasi serta pengetahuan baru bagi pembaca. Semoga Ebook ini dapat memenuhi ekspektasi dan kebutuhan para pembaca dan semoga ilmu yang disampaikan dapat bermanfaat bagi semua.</p>
 </section>
-<section id="masukan-saran" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="masukan-saran">Masukan &amp; Saran</h2>
+<section id="masukan-saran" class="level2">
+<h2 class="anchored" data-anchor-id="masukan-saran">Masukan &amp; Saran</h2>
 <p>Semua masukan dan tanggapan Anda sangat berarti bagi kami untuk memperbaiki Ebook Quarto Template ini kedepannya. Bagi para pembaca/pengguna yang ingin menyampaikan masukan dan tanggapan, dipersilahkan melalui kontak dibawah ini!</p>
 <p><strong>Email:</strong> dsciencelabs@outlook.com</p>
 
 
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-xie2015" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">Y. Xie, <em><a href="http://yihui.name/knitr/">Dynamic Documents with <span>R</span> and knitr</a></em>, 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC, 2015.</div>
+</div>
+</div>
 </section>
 </section>
 
@@ -659,7 +698,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./chapters/bab-1.html" class="pagination-link" aria-label="Bab1">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Bab1</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Bab1</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -668,5 +707,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/pakardata1/Quarto_Template.git/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Sunting laman ini</a></li><li><a href="https://github.com/pakardata1/Quarto_Template.git/issues/new" class="toc-action"><i class="bi empty"></i>Laporkan isu</a></li></ul></div></div></div></footer><script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/pakardata1/ebook-template-quarto.git/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Sunting laman ini</a></li><li><a href="https://github.com/pakardata1/ebook-template-quarto.git/issues/new" class="toc-action"><i class="bi empty"></i>Laporkan isu</a></li></ul></div></div></div></footer><script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

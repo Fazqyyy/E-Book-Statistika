@@ -1,3 +1,15 @@
 \usepackage{booktabs}
 \usepackage{lscape}
+\usepackage{float}
+\usepackage{geometry}
+
+\renewcommand{\maketitle}{%
+  \begin{titlepage}
+    \newgeometry{margin=0pt}
+    \thispagestyle{empty}
+    \centering
+    \includegraphics[height=\paperheight,keepaspectratio]{images/Cover.png}
+  \end{titlepage}
+  \restoregeometry
+}
 

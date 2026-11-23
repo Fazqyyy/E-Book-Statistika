@@ -85,9 +85,15 @@ docs/
 Folder `docs/` berisi keluaran yang akan diterbitkan. Folder ini harus ikut diunggah ke GitHub. Untuk menghasilkan PDF atau EPUB secara terpisah, jalankan:
 
 ```bash
-quarto render --to pdf
-quarto render --to epub
+quarto render --to pdf --no-clean
+quarto render --to epub --no-clean
 ```
+
+Opsi `downloads: [pdf]` pada `_quarto.yml` menambahkan tombol PDF ke sidebar. Agar tombol berfungsi di GitHub Pages, sertakan `docs/Quarto-Template.pdf` saat mengunggah hasil render.
+
+Cover PDF diatur melalui `assets/preamble.tex` dan memakai `images/Cover.png`; sesuaikan path tersebut jika mengganti gambar cover. Foto penulis menggunakan gambar Quarto agar tampil di HTML dan PDF.
+
+Tanggal di halaman depan diambil dari `date: today` pada `_quarto.yml`, sehingga diperbarui setiap kali situs dirender.
 
 Untuk menghasilkan PDF, instal TinyTeX melalui R jika LaTeX belum tersedia:
 
@@ -216,6 +222,8 @@ Menurut penelitian sebelumnya [@nama-kunci], ...
 ```
 
 Pastikan kunci sitasi `nama-kunci` tersedia di salah satu file `.bib` yang didaftarkan pada `_quarto.yml`.
+
+Gaya IEEE diatur melalui `references/ieee.csl`; sitasi tampil sebagai nomor dan dapat diklik menuju entri pada halaman Referensi.
 
 ## 9. Memperbarui buku di GitHub
 
