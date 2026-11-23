@@ -89,7 +89,7 @@ quarto render --to pdf --no-clean
 quarto render --to epub --no-clean
 ```
 
-Opsi `downloads: [pdf, epub]` pada `_quarto.yml` menambahkan tombol PDF dan EPUB ke sidebar. Agar tombol berfungsi di GitHub Pages, sertakan `docs/Quarto-Template.pdf` dan `docs/Quarto-Template.epub` saat mengunggah hasil render.
+Bagian `sidebar.tools` pada `_quarto.yml` menambahkan tombol **Pratinjau PDF** dan **Pratinjau EPUB** secara terpisah di sidebar. Agar tombol berfungsi di GitHub Pages, sertakan `docs/Quarto-Template.pdf` dan `docs/Quarto-Template.epub` saat mengunggah hasil render.
 
 Cover PDF diatur melalui `assets/preamble.tex` dan memakai `images/Cover.png`; sesuaikan path tersebut jika mengganti gambar cover. Foto penulis menggunakan gambar Quarto agar tampil di HTML dan PDF.
 

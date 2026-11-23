@@ -13,7 +13,16 @@ book:
   cover-image: images/Cover.png
   repo-url: https://github.com/pakardata1/ebook-template-quarto.git
   repo-actions: [edit, issue]
-  downloads: [pdf, epub]
+  sidebar:
+    tools:
+      - icon: file-pdf
+        href: Quarto-Template.pdf
+        text: Pratinjau PDF
+        aria-label: Pratinjau PDF
+      - icon: journal
+        href: Quarto-Template.epub
+        text: Pratinjau EPUB
+        aria-label: Pratinjau EPUB
   chapters:
     - index.qmd
     - chapters/bab-1.qmd
