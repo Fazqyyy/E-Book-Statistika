@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pratinjau EPUB | Quarto Template</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: system-ui, sans-serif;
+      color: #23364a;
+      background: #f3f6f9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.75rem clamp(1rem, 4vw, 2rem);
+      background: #315479;
+      color: #fff;
+    }
+
+    header h1 {
+      flex: 1;
+      margin: 0;
+      font-size: 1.15rem;
+    }
+
+    a,
+    button,
+    select {
+      font: inherit;
+    }
+
+    header a,
+    button,
+    select {
+      min-height: 2.5rem;
+      border: 1px solid #d5deea;
+      border-radius: 0.4rem;
+      padding: 0.45rem 0.75rem;
+    }
+
+    header a {
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+    }
+
+    main {
+      width: min(100%, 1100px);
+      margin: 1.25rem auto;
+      padding: 0 clamp(0.75rem, 3vw, 1.5rem);
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr) auto;
+      gap: 0.75rem;
+      min-height: 0;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+    }
+
+    #chapter-select {
+      width: min(55vw, 30rem);
+      background: #fff;
+    }
+
+    button {
+      color: #23364a;
+      background: #fff;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      cursor: wait;
+      opacity: 0.55;
+    }
+
+    #viewer {
+      min-height: 60vh;
+      height: calc(100vh - 11rem);
+      overflow: hidden;
+      border: 1px solid #d5deea;
+      border-radius: 0.5rem;
+      background: #fff;
+      box-shadow: 0 0.5rem 1.5rem rgba(35, 54, 74, 0.08);
+    }
+
+    #status {
+      min-height: 1.5rem;
+      margin: 0;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-wrap: wrap;
+      }
+
+      header h1 {
+        flex-basis: 100%;
+      }
+
+      #viewer {
+        height: calc(100vh - 14rem);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pratinjau EPUB: Quarto Template</h1>
+    <a href="./index.html">Kembali ke buku</a>
+    <a href="./Quarto-Template.epub" download>Unduh EPUB</a>
+  </header>
+  <main>
+    <nav aria-label="Navigasi buku">
+      <button id="previous" type="button" disabled>Sebelumnya</button>
+      <label for="chapter-select" hidden>Pilih bab</label>
+      <select id="chapter-select" aria-label="Pilih bab" disabled>
+        <option value="">Sampul</option>
+      </select>
+      <button id="next" type="button" disabled>Berikutnya</button>
+    </nav>
+    <div id="viewer" aria-label="Pembaca EPUB"></div>
+    <p id="status" role="status">Memuat buku...</p>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/epubjs@0.3.93/dist/epub.min.js"></script>
+  <script src="./assets/epub-reader.js"></script>
+</body>
+</html>

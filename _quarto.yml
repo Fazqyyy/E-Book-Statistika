@@ -4,6 +4,8 @@ project:
   resources:
     - .nojekyll
     - images/author/Bakti.png
+    - epub-reader.html
+    - assets/epub-reader.js
 
 book:
   title: "Quarto Template"
@@ -20,7 +22,7 @@ book:
         text: Pratinjau PDF
         aria-label: Pratinjau PDF
       - icon: journal
-        href: Quarto-Template.epub
+        href: epub-reader.html
         text: Pratinjau EPUB
         aria-label: Pratinjau EPUB
   chapters:
