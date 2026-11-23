@@ -1,4 +1,4 @@
-# Bab2
+# Hiptesis Testing
 
 
 ## Praktikum
