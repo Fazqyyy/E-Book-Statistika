@@ -3,17 +3,17 @@ project:
   output-dir: docs
   resources:
     - .nojekyll
-    - images/author/Bakti.png
+    - images/author/fadil.png
     - epub-reader.html
     - assets/epub-reader.js
 
 book:
   title: "Quarto Template"
-  author: "Bakti Siregar, M.Sc."
+  author: "Fadilah Al Zidny"
   date: today
   description: "Deskripsi singkat tentang buku"
-  cover-image: images/Cover.png
-  repo-url: https://github.com/pakardata1/ebook-template-quarto.git
+  cover-image: images\cover_book.png
+  repo-url: https://github.com/Fazqyyy/E-Book-Statistika
   repo-actions: [edit, issue]
   sidebar:
     tools:
@@ -52,7 +52,7 @@ format:
     include-after-body: assets/hover-preview.html
     include-in-header:
       text: |
-        <meta name="author" content="Bakti Siregar, M.Sc.">
+        <meta name="author" content="Fadilah Al Zidny">
   pdf:
     documentclass: book
     pdf-engine: xelatex
@@ -61,8 +61,7 @@ format:
     number-sections: true
     toc: true
   epub:
-    cover-image: images/Cover.png
-
+    cover-image: images/cover_book.png
 execute:
   freeze: auto
   echo: true
