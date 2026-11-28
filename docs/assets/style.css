@@ -58,26 +58,63 @@ pre code {
     text-decoration: none;
 }
 
+
 /* Tables */
 
-td, tr, th {
-    color:white !important;
-    background-color: transparent !important;
+:root {
+    --tbl-main:   #3f2d7a;   /* warna header & border */
+    --tbl-dark:   #2a1d57;   /* garis bawah header */
+    --tbl-stripe: #f3f1f9;   /* baris selang-seling */
+    --tbl-hover:  #ddd7ee;   /* baris saat disorot */
+    --tbl-line:   #e3dff0;   /* garis antar baris */
 }
 
 table {
-    border-radius: 10px 10px 10px 10px;
-    color:white !important;
-    background-color: rgb(78, 92, 104) !important;
-    padding: 6px 13px;
-    border: 1px solid #f0f0f0;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid var(--tbl-main);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffffff !important;
+    color: #222222 !important;
+    margin: 1rem 0;
 }
 
+th {
+    background-color: var(--tbl-main) !important;
+    color: #ffffff !important;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 14px;
+    border-bottom: 2px solid var(--tbl-dark);
+}
+
+td {
+    background-color: #ffffff !important;
+    color: #222222 !important;
+    padding: 8px 14px;
+    border-bottom: 1px solid var(--tbl-line);
+}
+
+tbody tr:nth-child(even) td {
+    background-color: var(--tbl-stripe) !important;
+}
+
+tbody tr:hover td {
+    background-color: var(--tbl-hover) !important;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
 
 caption {
-    color:black;
+    color: #333333;
+    font-style: italic;
+    padding: 6px 0;
+    caption-side: bottom;
 }
-
 
 /* source code copy button */
 .copy {
